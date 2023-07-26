@@ -1,10 +1,20 @@
+@import url(/styles/header.css);
+
+:root{
+    --cor-principal : #1393c5;
+    --cor-secundaria : #1b4dd6;
+    --cor-daescrita : #000000;
+    --cor-defundo : #6013dd;
+
+}
+
 .escola-imagem {
     width: 25%;
 }
 
 .escola {
     background-image: linear-gradient(#424E61, #16CFF8);
-    color: white;
+    color: rgb(40, 180, 173);
     display: flex;
     justify-content: center;
     align-items: center;
