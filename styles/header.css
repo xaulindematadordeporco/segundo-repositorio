@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container__imagem {
+    padding: 1em;
+}
+
+.cabecalho-lista {
+    display: none;
+    background-color: var(--branco);
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.cabecalho__menu.cabecalho__menu:checked.cabecalho-lista {
+    display: block;
+}
+
+.container_menu {
+    display: none;
+
+}
+
+@media screen and (102px) {
+    .container-titulo
+    display: block; 
+}
+
+..menu_lita-item {
+
+    color
+}
