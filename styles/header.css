@@ -18,20 +18,27 @@
 }
 
 .cabecalho__menu.cabecalho__menu:checked.cabecalho-lista {
+
     display: block;
+
 }
 
 .container_menu {
+
     display: none;
 
 }
 
 @media screen and (102px) {
-    .container-titulo
-    display: block; 
+
+.container-titulo
+    
+    display: block;
+
 }
 
 ..menu_lita-item {
 
-    color
+    color: #000;
+
 }
