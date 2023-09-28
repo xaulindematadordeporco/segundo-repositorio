@@ -42,3 +42,80 @@
     color: #32b9b6;
 
 }
+
+
+2G - Matematica II - Noite - Médio
+GABRIEL DE LARA, C E-EF M PROF
+
+Meet
+Próximas atividades
+Nenhuma atividade para a próxima semana!
+
+Escreva um aviso para sua turma
+
+Aviso: "@media screen and (min-width: 1024px) {…"
+GERSON CESAR GROBE DE MIRANDA
+Criado em: 22:3422:34
+@media screen and (min-width: 1024px) {
+    .container-titulo{
+        display: block;
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .cabecalho__menu{
+        display: none;
+    }
+
+    .cabecalho__favorito{
+        display: none;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes__item{
+        padding: 0 2em;
+        text-transform: uppercase;
+        color: var(--branco);
+    }
+
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .opcoes__botao:checked ~.cabecalho-lista{
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+}
