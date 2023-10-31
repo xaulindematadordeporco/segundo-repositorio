@@ -1,3 +1,42 @@
 .cards {
     background-color: blue;
 }
+
+.card {
+    background: var (--roxo);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    }
+    .descricao_titulo {
+    color: var(--amarelo);
+    font-weight: 700;
+    }
+    .descricao_titulo-produto {
+    
+    color: var(--cor-5);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0.5em 0;
+
+    .descricao_texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 13px;
+    
+    }
+    
+    .descricao_imagem
+    width: 60%;
+
+    .botoes_item {
+        margin: 0 0.5em;
+        }
+
+        .botoes_ancora {
+            background-color: var(--amarelo);
+            padding: 1em 2.2em;
+            color: var(--cor-principal);
+            font-weight: 700;
+            text-decoration: none;
+            }
