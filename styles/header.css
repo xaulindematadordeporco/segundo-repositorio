@@ -1,61 +1,84 @@
+.cabecalho {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.cabecalho-imagem{
+    padding: 1em;
+}
 
 .container__imagem {
     padding: 1em;
+    width: 40px;
 }
 
 .cabecalho-lista {
     display: none;
-    background-color: var(--branco);
+    background-color: var(--cor-de-fundo);
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: 50vw;
 }
 
-.cabecalho__menu.cabecalho__menu:checked.cabecalho-lista {
-
+.container__botao:checked~.cabecalho-lista {
     display: block;
-
 }
 
-.container_menu {
-
+.container__botao {
     display: none;
-
 }
 
-@media screen and (102px) {
-
-.container-titulo
-    
-    display: block;
-
+.cabecacalho-lista-titulo{
+    padding: 1em;
+    color: var(--preto);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-..menu_lita-item {
-
-    color: #32b9b6;
-
+.cabecalho-lista-item{
+    padding: 1em;
+    color: var(--azul);
 }
 
+.container-titulo{
+    display: none;
+}
 
-2G - Matematica II - Noite - Médio
-GABRIEL DE LARA, C E-EF M PROF
+.menu__lista-item{
+    background: var(--cor-principal);
+    color: var(--azul);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
 
-Meet
-Próximas atividades
-Nenhuma atividade para a próxima semana!
+.opcoes {
+    display: none;
+}
 
-Escreva um aviso para sua turma
+.container__texto {
+    display: none;
+}
 
-Aviso: "@media screen and (min-width: 1024px) {…"
-GERSON CESAR GROBE DE MIRANDA
-Criado em: 22:3422:34
 @media screen and (min-width: 1024px) {
     .container-titulo{
         display: block;
@@ -95,9 +118,9 @@ Criado em: 22:3422:34
     .opcoes__botao{
         display: none;
     }
+
+   
 }
-
-
 
 @media screen and (min-width: 1728px) {
     .container__link {
