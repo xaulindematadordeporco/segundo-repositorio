@@ -1,6 +1,6 @@
 .banner {
     background: var(--azul-degrade);
-    color: var(--branco);
+    color: var(--preto);
     text-align: center;
     padding: 2.5em 2em;
 }
@@ -18,8 +18,8 @@
 
 .banner__pesquisa {
     background-color: transparent;
-    border: 1px solid var(--branco);
-    color: var(--branco);
+    border: 1px solid var(--cinza);
+    color: var(--cinza);
     border-radius: 24px;
     padding: 1em;
     width: 100%;
@@ -30,7 +30,7 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    color: var(--branco);
+    color: var(--azul);
     background: url("../img/Lupa.svg") no-repeat;
     background-position: 1em;
     padding-left: 2em;
