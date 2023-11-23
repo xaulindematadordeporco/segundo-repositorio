@@ -1,51 +1,114 @@
-<DOCTPE html>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+
+        <title>Página Principal</title>
+
+        <link rel="stylesheet" href="reset.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
 
     </head>
 
     <body>
         <header class="cabecalho">
-            <div class="conteiner">
-                <input type="checkbox" id="menu" class="conteiner_nenu">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
                 <label for="menu">
-                    <span class="cabecalho_menu cabecalho_menu">                  
+                    <span class="cabecalho__menu container__imagem"></span>
                 </label>
-            </div>
-            <img class="cabecalho-imagem" src="./img/jao.jpg" alt="logo">
-            <h1> AU </h1>
 
-            <ul class="cabecalho-lista">
-                <li class="cabecalho-lista-item">serviços</li>
-                <li class="cabecalho-lista-item">projetos
-                </li>
-                <li class="cabecalho-lista-item">contato</li>
-            </ul>
-        </header>
-        <section class="secao1">
-            <div>
-                <h2 class="secao1-titulo"> somos um pet shop expecializado na area </h2>
-                <p class="secao1-p1"> oferecemos tudo para seu pet </p>
-                <img class="secao1-p1" src="./img/logotipo.jpg">
+                <ul class="cabecalho-lista">
+                    <li class="cabecacalho-lista-titulo">Categorias</li>
+                    <li class="cabecalho-lista-item"><a class="menu__lista-item" href="#">Serviços</a></li>
+                    <li class="cabecalho-lista-item"><a class="menu__lista-item" href="#">Projetos</a></li>
+                    <li class="cabecalho-lista-item"><a class="menu__lista-item" href="#">Contato</a></li>
+                </ul>
+
+                <img class="cabecalho-imagem container__imagem" src="./img/.png" alt="logo generico">
+                <h1 class="container-titulo"> grobe.mat.br </h1>
             </div>
+
+            <ul class="opcoes">
+                <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu">
+                    <li class="opcoes__item">Categorias</li>
+                </label>
+    
+                <ul class="cabecalho-lista">
+                    <li class="cabecalho-lista-item">
+                        <a href="#" class="menu__lista-item">Opção 1</a>
+                    </li>
+                    <li class="cabecalho-lista-item">
+                        <a href="#" class="menu__lista-item">Opção 2</a>
+                    </li>
+                    <li class="cabecalho-lista-item">
+                        <a href="#" class="menu__lista-item">Opção 3</a>
+                    </li>                    
+                </ul>
+    
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Serviços</a></li>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Projetos</a></li>
+            </ul>
+
+            <div class="container">
+                <a href="#"><img class="cabecalho-imagem cabecalho__favorito" src="./img/favorito.svg" alt="Meus favoritos"> </a>
+                <a href="#" class="container__link">
+                    <img class="cabecalho-imagem" src="./img/contato.svg" alt="Contatos">
+                    <p class="container__texto">Fale conosco</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img class="cabecalho-imagem" src="./img/compras.svg" alt="Carrinho de compras">
+                    <p class="container__texto">Minha sacola</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img class="cabecalho-imagem" src="./img/Usuario.svg" alt="Meu Perfil">
+                    <p class="container__texto">Meu perfil</p>
+                </a>
+            </div>
+
+        </header>
+
+        ￼
+        Canva
+        https://www.canva.com › pt_br
+        
+        
+
+        <section class="banner">
+            <h2 class="banner__titulo">oque procura?</h2>
+            <p class="banner__texto">Encontre em nossa "página" o que precisa para seu "desenvolvimento"!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Faça sua busca em nossos serviços">
+        </section>
+
+        <section class="secao1">
+
+
+            <div class="secao1-div-conteudo">
+                <h2 class="secao1-titulo"> Quem somos: </h2>
+                <p class="secao1-p1">Somos a melhor do ramo na região</p>
+                <p class="secao1-p2"> Oferecemo tudo para seu pet </p>
+            </div>
+
+            <img class="secao1-imagem" src="./img/quadro.jpg">
+
         </section>
 
         <section class="carrossel">
-               
-            <h2 class="carrossel__titulo"> Nossos Produtos&Serviços </h2>
-               
+                
+            <h2 class="carrossel__titulo">Nossos Produtos & Serviços</h2>
+            
             <!-- Slider main container -->
             <div class="carrossel__container">
-                
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <!-- If we need pagination -->
@@ -54,115 +117,130 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="" alt="Rações">
+                            <img src="img/produto.svg" alt="Aulas de matemática básica">
                         </div>
                         <div class="swiper-slide">
-                            <img src="" alt="Acessorios para seu Pet">
+                            <img src="img/produto.svg" alt="Aulas de matemática nível intermediário">
                         </div>
                         <div class="swiper-slide">
-                            <img src="" alt="Banho e Tosa">
-                        </div><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16 0C7.168 0 0 7.168 0 16C0 24.832 7.168 32 16 32C24.832 32 32 24.832 32 16C32 7.168 24.832 0 16 0ZM8.112 26.048C8.8 24.608 12.992 23.2 16 23.2C19.008 23.2 23.216 24.608 23.888 26.048C21.712 27.776 18.976 28.8 16 28.8C13.024 28.8 10.288 27.776 8.112 26.048ZM26.176 23.728C23.888 20.944 18.336 20 16 20C13.664 20 8.112 20.944 5.824 23.728C4.192 21.584 3.2 18.912 3.2 16C3.2 8.944 8.944 3.2 16 3.2C23.056 3.2 28.8 8.944 28.8 16C28.8 18.912 27.808 21.584 26.176 23.728V23.728ZM16 6.4C12.896 6.4 10.4 8.896 10.4 12C10.4 15.104 12.896 17.6 16 17.6C19.104 17.6 21.6 15.104 21.6 12C21.6 8.896 19.104 6.4 16 6.4ZM16 14.4C14.672 14.4 13.6 13.328 13.6 12C13.6 10.672 14.672 9.6 16 9.6C17.328 9.6 18.4 10.672 18.4 12C18.4 13.328 17.328 14.4 16 14.4Z" fill="#FFFFFF"/>
-                            </svg>
-                            
+                            <img src="img/serviço.svg" alt="Aulas de matemát
+                            ￼
+                            Canva
+                            https://www.canva.com › pt_br
+                            ica nível avançado">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/produto2.svg" alt="Aulas de geometria">
+                        </div>
                     </div>
         
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-
-            </div>
-
-            <div class="card">
-                
-                <div class="cards__descricao">
-                    
-                    <div class="descicao">
-                        <h3 class="dscricao__titulo
-                        >Talvez voce tenha interesse por...
-                        </h3>
-
-                        <h2
-                        class="descicao__titulo">
-                    </h2>
-
-                    <p> Nossos serviços de banho e tosa sao os melhores da regiao,venha aproveitar nosas promoçoes e marcar um horario para eu pet. </p>
-
-                </div>
-
-                <img src="img/promocao.png" alt="nossa melhor promoçao">
-                 
-                <div class="card__botoes">
-
-                    <ul>
-                        <li class="botoes__item" > <img
-                            src="img/favorito.svg"
-                            alt="favorito produto" </li>
-                            <li class="botoes__item" 
-                            src="img/compra.svg"<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16 0C7.168 0 0 7.168 0 16C0 24.832 7.168 32 16 32C24.832 32 32 24.832 32 16C32 7.168 24.832 0 16 0ZM8.112 26.048C8.8 24.608 12.992 23.2 16 23.2C19.008 23.2 23.216 24.608 23.888 26.048C21.712 27.776 18.976 28.8 16 28.8C13.024 28.8 10.288 27.776 8.112 26.048ZM26.176 23.728C23.888 20.944 18.336 20 16 20C13.664 20 8.112 20.944 5.824 23.728C4.192 21.584 3.2 18.912 3.2 16C3.2 8.944 8.944 3.2 16 3.2C23.056 3.2 28.8 8.944 28.8 16C28.8 18.912 27.808 21.584 26.176 23.728V23.728ZM16 6.4C12.896 6.4 10.4 8.896 10.4 12C10.4 15.104 12.896 17.6 16 17.6C19.104 17.6 21.6 15.104 21.6 12C21.6 8.896 19.104 6.4 16 6.4ZM16 14.4C14.672 14.4 13.6 13.328 13.6 12C13.6 10.672 14.672 9.6 16 9.6C17.328 9.6 18.4 10.672 18.4 12C18.4 13.328 17.328 14.4 16 14.4Z" fill="#FFFFFF"/>
-                                </svg>
-                                
-                            alt="adicionar ao carrinho" >
-                        </li>
-                    </ul>
-
-                </div>
-                
-        </section>
-
-        <section class="apresentaçao">
-            <h2>apresentaçao</h2>
-            <h3 class="nome">Joao Admir Vieira</h3>
-            <img class="nome-img" src="/img/jao.jpg" alt="foto pessoal">
-            <img class="icon-github" src="/img/github.png" alt="icone github">
-            <img class="icon-instagram" src="/img/instagram.png" alt="icone instagram">
-            <img class="icon-whatsapp" src="./img/whatsapp.png" alt="icone whatsapp">
-
-        </section>
-        <section>
-            <div>
-                <img src="./img/.jpg">
-            </div>
-            
-
-            <h2 class="carrossel__titulo">Nossos Produtos&Serviços</h2>
-            
-            <!-- Slider main container -->
-            <div class="carrossel__container">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
         
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="" alt="Banho e Tosa">
+                <div class="card">
+                    <!-- 1º linha -->
+                    <div class="card__descricao">
+                        <!-- 1º coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-produto">Banho e Tosa</h2>
+                            <p class="descricao__texto">Deixe seu pet limpo e formoso como nunca.</p>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="" alt="Ração">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="" alt="Brinquedos para seu Pet">
-                        </div>
+                        <!-- 2º coluna -->
+                        <img src="img/serviço.svg" class="descricao__imagem">
                     </div>
+        
+                    <!-- 2º lin
+￼
+Canva
+https://www.canva.com › pt_br
+
+￼
+Canva
+https://www.canva.com › pt_br
+ha -->
+                    <div class="card__botoes">
+                        ￼
+                        Canva
+                        https://www.canva.com › pt_br
+                        
+                        <!-- 1º coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/promocao.svg" alt="Favoritar livro"></li>
+                            <li class="botoes__item"><img src="img/compras.svg" alt="Adicionar no carrinho de compras"></li>
+                        </ul>
+                        ￼
+                        Canva
+                        https://www.canva.com › pt_br
+                        
+                        <!-- 2º coluna -->
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section class="apresentacao">
+            <h2 class="apresentacao-titulo">Apresentação:</h2>
+            <div class="apresentacao-tudo">
+                <span></span>
+                <div class="div-apresentacao">
+                    <h3 class="nome">Gerson Cesar Grobe de Miranda</h3>
+                    <a href=""><img class="nome-img" src="./img/joao.jpg" alt="Foto Pessoal"></a>
+                    <div class="icones">
+                        <a href="https://github.com/xaulinmatadordeporco/segundo-repositorio">
+                            <img class="icon-redes" src="./img/github.png" alt="icone github">
+                        </a>
+                        <a href="#">
+                            <img class="icon-redes" src="./img/instagram.png" alt="icone instagran">
+                        </a>
+                        <a href="#">
+                            <img class="icon-redes" src="./img/whatsapp.png" alt="icone whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">NOSSOS SERVIÇOS PRESTADOS</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item">
+                    <a href="#" class="topicos__link">Banho e tosa</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="#" class="topicos__link">Rações</a>
+                </li>
+                <li class="topicos__item">
+                    ￼
+                    Canva
+                    https://www.canva.com › pt_br
+                    
+                    <a href="#" class="topicos__link">Roupinhas</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="#" class="topicos__link">mais...</a>
+                </li>
+                
+            </ul>
+        </section>
+
         <section class="contato">
             <div class="contato__descricao">
                 <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-                <p class="contato__texto">Atualizações de Produtos, novos serviços, promoções e outros.</p>
+                <p class="contato__texto">Atualizações de novos serviços, novos produtos, promoções e outros.</p>
             </div>
             <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
         </section>
     
         <hr />
         
-        <script src=""></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     
         <footer class="rodape">
-            <h2 class="rodape__titulo">au.com.br</h2>
+            <h2 class="rodape__titulo">au.pet.br</h2>
         </footer>
     
     
@@ -179,4 +257,4 @@
         </script>
     </body>
 
-    </html>
+</html>
