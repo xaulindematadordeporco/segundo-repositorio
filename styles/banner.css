@@ -1,5 +1,5 @@
 .banner {
-    background: var(--azul-degrade);
+    background: var(--preto);
     color: var(--preto);
     text-align: center;
     padding: 2.5em 2em;
@@ -18,8 +18,8 @@
 
 .banner__pesquisa {
     background-color: transparent;
-    border: 1px solid var(--cinza);
-    color: var(--cinza);
+    border: 1px solid var(--preto);
+    color: var(--preto);
     border-radius: 24px;
     padding: 1em;
     width: 100%;
