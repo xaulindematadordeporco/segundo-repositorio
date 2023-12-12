@@ -30,8 +30,8 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    color: var(--azul);
-    background: url("../img/Lupa.svg") no-repeat;
+    color: var(--preto);
+    background: url("../img/Lupa.") no-repeat;
     background-position: 1em;
     padding-left: 2em;
 }

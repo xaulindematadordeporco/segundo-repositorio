@@ -15,11 +15,11 @@
     --cor-6: #717af9;
     --cor-de-fundo: #EBECEE;
     --branco:#1057f0;
-    --preto: #000000;
-    --roxo: #000000;
+    --preto: #1258db;
+    --roxo: #101ee7;
     --amarelo: #a90ef1;
     --azul: #1420be;
-    --azul-degrade: linear-gradient(#000005,#01030e);;
+    --azul-degrade: linear-gradient(#0606f1,#0c2ef5);;
     --fonte-principal: "Roboto";
     --fonte-secundaria: "Prompt";
 }
