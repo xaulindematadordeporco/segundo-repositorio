@@ -18,8 +18,8 @@
 
 .banner__pesquisa {
     background-color: transparent;
-    border: 1px solid var(--preto);
-    color: var(--preto);
+    border: 1px solid var(--amarelo);
+    color: var(--amarelo);
     border-radius: 24px;
     padding: 1em;
     width: 100%;
