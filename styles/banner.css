@@ -1,6 +1,6 @@
 .banner {
-    background: var(--preto);
-    color: var(--preto);
+    background: var(--roxo);
+    color: var(--roxo);
     text-align: center;
     padding: 2.5em 2em;
 }
@@ -11,7 +11,7 @@
 }
 
 .banner__texto {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--preto);
     font-weight: 500;
     margin: 1em 0;
 }
@@ -30,7 +30,7 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    color: var(--preto);
+    color: var(--roxo);
     background: url("../img/lupa.svg") no-repeat;
     background-position: 1em;
     padding-left: 2em;
