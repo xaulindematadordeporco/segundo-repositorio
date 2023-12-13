@@ -31,7 +31,7 @@
     font-weight: 400;
     text-align: center;
     color: var(--preto);
-    background: url("../img/lupa.png") no-repeat;
+    background: url("../img/lupa.svg") no-repeat;
     background-position: 1em;
     padding-left: 2em;
 }
